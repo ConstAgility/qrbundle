@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a4a9c6c2-5c9e-4e0d-8b67-4a1e2b7c1011",
+    "type": "qr",
+    "value": "https://shop.example.com/products/sofa-oakridge-3-seater",
+    "title": "Oakridge 3‑Seater Fabric Sofa"
+  },
+  {
+    "id": "b7f3d8e4-2b1a-4c3d-9e22-6f4c9a8b2202",
+    "type": "qr",
+    "value": "https://shop.example.com/products/coffee-table-oakridge-glass-top",
+    "title": "Oakridge Glass‑Top Coffee Table"
+  },
+  {
+    "id": "c1e2f3a4-7d8b-4c6e-9f10-3a5b7c9d3303",
+    "type": "qr",
+    "value": "https://shop.example.com/products/tv-stand-oakridge-72-inch",
+    "title": "Oakridge 72\" Media Console"
+  },
+  {
+    "id": "d4b5c6e7-8f9a-4b3c-8d21-5e6f7a8b4404",
+    "type": "qr",
+    "value": "https://shop.example.com/products/area-rug-nordic-wool-8x10",
+    "title": "Nordic Wool Area Rug 8x10"
+  },
+  {
+    "id": "e7c8d9f1-2a3b-4c5d-9e32-7f8a9b0c5505",
+    "type": "qr",
+    "value": "https://shop.example.com/products/armchair-oakridge-accent-chair",
+    "title": "Oakridge Accent Armchair"
+  },
+  {
+    "id": "f9d0e1a2-3b4c-4d5e-8f43-9a0b1c2d6606",
+    "type": "qr",
+    "value": "https://shop.example.com/products/floor-lamp-arc-brushed-brass",
+    "title": "Arc Floor Lamp in Brushed Brass"
+  },
+  {
+    "id": "0a1b2c3d-4e5f-4061-8a72-1b2c3d4e7707",
+    "type": "qr",
+    "value": "https://shop.example.com/products/side-table-oakridge-nest-set-of-2",
+    "title": "Oakridge Nesting Side Tables (Set of 2)"
+  },
+  {
+    "id": "1b2c3d4e-5f60-4172-9b83-2c3d4e5f8808",
+    "type": "qr",
+    "value": "https://shop.example.com/products/cushion-set-linen-throw-pillows",
+    "title": "Linen Throw Cushion Set (4‑Pack)"
+  },
+  {
+    "id": "2c3d4e5f-6071-4283-ac94-3d4e5f609909",
+    "type": "qr",
+    "value": "https://shop.example.com/products/wall-art-abstract-canvas-48x32",
+    "title": "Abstract Canvas Wall Art 48x32"
+  },
+  {
+    "id": "3d4e5f60-7182-4394-bda5-4e5f60701a10",
+    "type": "qr",
+    "value": "https://shop.example.com/products/throw-blanket-cashmere-oat",
+    "title": "Cashmere Throw Blanket in Oat"
+  }
+]

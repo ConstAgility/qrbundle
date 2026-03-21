@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://constagility.com/ns/qrbundle/1.0/qrset.schema.json",
+  "title": "QRBundle QR Set",
+  "description": "JSON Schema for qrset.json — format version 1.0 (paired with manifest qrbundle/1.0).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "value", "title"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the QR item (e.g., UUID)."
+      },
+      "type": {
+        "type": "string",
+        "enum": ["qr"],
+        "description": "Item type. Currently only 'qr' is supported."
+      },
+      "value": {
+        "type": "string",
+        "format": "uri",
+        "description": "The QR code payload, typically a URL."
+      },
+      "title": {
+        "type": "string",
+        "description": "Short human‑readable label for the item."
+      }
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://constagility.com/ns/qrbundle/1.0/qrbundle.schema.json",
+  "title": "QRBundle Manifest",
+  "description": "JSON Schema for manifest.json — format version 1.0 (qrbundle/1.0).",
+  "type": "object",
+  "required": ["schema", "bundleId", "title", "createdAt"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "qrbundle/1.0",
+      "description": "Format version identifier; must be qrbundle/1.0 for this schema."
+    },
+    "bundleId": { "type": "string" },
+    "app": { "type": "string" },
+    "sourceApp": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "previewImage": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "createdBy": { "type": "string" }
+  },
+  "additionalProperties": true
+}

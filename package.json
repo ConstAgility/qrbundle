@@ -1,0 +1,15 @@
+{
+  "name": "qrbundle",
+  "version": "0.1.0",
+  "description": "QRBundle (.qrb) open file format — schemas, examples, and assets.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build:font": "fantasticon",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "fantasticon": "3",
+    "prettier": "^3.5.0"
+  }
+}

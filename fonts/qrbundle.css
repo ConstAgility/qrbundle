@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "qrbundle";
+    src: url("./qrbundle.ttf?440d6a66ecf6920a405af755a31e4eb8") format("truetype"),
+url("./qrbundle.woff?440d6a66ecf6920a405af755a31e4eb8") format("woff"),
+url("./qrbundle.woff2?440d6a66ecf6920a405af755a31e4eb8") format("woff2");
+}
+
+qrb[class^="qrb-"]:before, qrb[class*=" qrb-"]:before {
+    font-family: qrbundle !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.qrb-qrbundle:before {
+    content: "\f101";
+}
