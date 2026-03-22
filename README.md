@@ -72,6 +72,39 @@ Implemented in the NxtTools mobile application on iOS & Android platforms:
 - [App Store](https://apps.apple.com/us/app/nxt-tools-daily-utility-app/id6758467117)
 - [Google Play](https://play.google.com/store/apps/details?id=com.constagility.nxttools)
 
+## npm package
+
+Published as [`qrbundle`](https://www.npmjs.com/package/qrbundle) (schemas, webfont, SVG source, examples).
+
+```bash
+npm install qrbundle
+```
+
+Paths inside `node_modules/qrbundle/`:
+
+| Use case         | Path (from package root)                                  |
+| ---------------- | --------------------------------------------------------- |
+| JSON Schemas     | `schema/qrbundle.schema.json`, `schema/qrset.schema.json` |
+| Webfont + CSS    | `fonts/qrbundle.css` (+ `.woff2`, `.woff`, `.ttf`)        |
+| SVG glyph source | `icons/qrbundle.svg`                                      |
+| Sample JSON      | `examples/minimal-bundle/`                                |
+
+**Bundlers (Vite, webpack, etc.):** import the stylesheet so `@font-face` URLs resolve:
+
+```js
+import 'qrbundle/fonts/qrbundle.css';
+```
+
+Then use the `<qrb>` markup from [Icon font (`qrbundle`)](#icon-font-qrbundle) (codepoint **`U+F101`**). If font files fail to load, copy `fonts/*` into your app’s static/public directory and link CSS from there.
+
+### Publishing (maintainers)
+
+1. `npm login` (npm account required).
+2. Bump `"version"` in `package.json` when releasing.
+3. Regenerate fonts if `icons/qrbundle.svg` changed: `yarn install && yarn build:font`, then commit `fonts/`.
+4. Verify tarball contents: `npm pack --dry-run`.
+5. Publish: `npm publish`.
+
 ## Development
 
 This repo is a [Yarn](https://yarnpkg.com/) project (`package.json` + `yarn.lock`, package version **0.1.0**). That **npm semver** can move independently of the **bundle format version** (**1.0** / `"schema": "qrbundle/1.0"`). Tooling here is for **format assets** (schemas, icon font); it is not a reference `.qrb` reader/writer.

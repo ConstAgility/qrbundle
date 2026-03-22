@@ -3,6 +3,46 @@
   "version": "0.1.0",
   "description": "QRBundle (.qrb) open file format — schemas, examples, and assets.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConstAgility/qrbundle.git"
+  },
+  "homepage": "https://github.com/ConstAgility/qrbundle#readme",
+  "bugs": {
+    "url": "https://github.com/ConstAgility/qrbundle/issues"
+  },
+  "keywords": [
+    "qrbundle",
+    "qrb",
+    "qrset",
+    "qr",
+    "qr-code",
+    "bundle",
+    "json-schema",
+    "font",
+    "icon-font",
+    "mime-type"
+  ],
+  "files": [
+    "schema",
+    "fonts",
+    "icons",
+    "examples",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    "./fonts/*": "./fonts/*",
+    "./schema/*": "./schema/*",
+    "./icons/*": "./icons/*",
+    "./examples/*": "./examples/*"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.woff",
+    "**/*.woff2",
+    "**/*.ttf"
+  ],
   "scripts": {
     "build:font": "fantasticon",
     "format": "prettier --write .",
